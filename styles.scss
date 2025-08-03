@@ -1,0 +1,14 @@
+$primary: #000080;
+  @mixin button-style {
+    background: $primary;
+    padding: 10px;
+    color: white;
+  }
+  .container {
+    .button {
+      @include button-style;
+      &:hover {
+        background: lighten($primary, 10%);
+      }
+    }
+  }
